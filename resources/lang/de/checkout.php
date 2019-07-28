@@ -1,0 +1,25 @@
+<?php
+
+return [
+    'step'                 => 'Schritt',
+    'shipping_address'     => 'Lieferanschrift',
+    'use_existing_address' => 'Ich möchte eine bestehende Adresse benutzen',
+    'use_new_address'      => 'Ich möchte eine neue Adresse verwenden',
+    'continue'             => 'Fortsetzen',
+    'delivery_method'      => 'Zustellungsmethode',
+    'free_shipping'        => 'Kostenloser Versand',
+    'express'              => 'DHL',
+    'payment_method'       => 'Zahlungsmethode',
+    'select_payment'       => 'Bezahlen Sie mit Paypal per Kreditkarte oder Debitkarte. Die sicherere, einfachere Art zu bezahlen.',
+    'order_comment'        => 'Kommentare zu Ihrer Bestellung hinzufügen',
+    'confirm_order'        => 'Bestellung bestätigen',
+    'goto_step1'           => 'Bitte wählen Sie eine Versandadresse in Schritt 1',
+    'pay_order'            => 'Bestellung bezahlen',
+    'goto_step4'           => 'Bitte bestätigen Sie die Bestellung in Schritt 4',
+    'done_header'          => '<h2> Ihre Bestellung wurde erfolgreich aufgegeben und bezahlt! </h2>',
+    'done_order'           => '<p> Sie können Ihren Bestellverlauf auf der Seite <a href="/account">Mein Konto</a> anzeigen, indem Sie auf <a href="/account/orders">Verlauf</a> klicken. </p>',
+    'done_tracking'        => '<p> Sie können Ihre Bestellung auf der <a href="/tracking">Bestellverfolgungsseite verfolgen,</a> indem Sie die Bestellnummer oder die Tracking-Nummer eingeben. </p>',
+    'done_help'            => '<p> Bitte richten Sie Ihre Fragen an uns. </p><p> Vielen Dank für Ihren Einkauf bei uns online! </p>',
+    'goto_account'         => '<p> Sie können Ihre Bestellung Geschichte , indem Sie auf die Ansicht <a href="/account">Mein Konto</a> Seite und durch einen Klick auf <a href="/account/orders">Geschichte</a> . </p>',
+    'your_order_is'        => 'Ihre Bestellung ist',
+];

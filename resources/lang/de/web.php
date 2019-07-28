@@ -1,0 +1,27 @@
+<?php
+
+return [
+    'cart'                     => 'Einkaufswagen',
+    'categories'               => 'Kategorien',
+    'toggle_nav'               => 'Navigation umschalten',
+    'admin_panel'              => 'Administrationsmenü',
+    'details'                  => 'Einzelheiten',
+    'submit'                   => 'einreichen',
+    'checkout'                 => 'Auschecken',
+    'invalid_order'            => 'Ungültige Bestellung',
+    'invalid_address'          => 'Ungültige Adresse!',
+    'invalid_shipping_address' => 'Ungültige Lieferadresse!',
+    'error'                    => 'Error',
+    'success'                  => 'Erfolg',
+    'payment_canceled'         => 'Zahlung storniert',
+    'payment_complete'         => 'Herzliche Glückwünsche! Ihre Zahlung ist abgeschlossen!',
+    'transaction_error'        => 'Während der Transaktion ist ein Fehler aufgetreten!',
+    'payment_canceled_text'    => 'Sie haben die Zahlung storniert!',
+    'confirm_delete'           => 'Möchten Sie diesen Datensatz wirklich löschen?',
+    'yes'                      => 'Ja',
+    'no'                       => 'Nein',
+    'back'                     => 'Zurück',
+    'updated'                  => 'Erfolgreich aktualisiert',
+    'status'                   => 'Status',
+    'currency'                 => 'Währung',
+];

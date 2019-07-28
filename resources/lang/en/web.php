@@ -1,0 +1,27 @@
+<?php
+
+return [
+    'cart'                     => 'Shopping Cart',
+    'categories'               => 'Categories',
+    'toggle_nav'               => 'Toggle navigation',
+    'admin_panel'              => 'Admin Panel',
+    'details'                  => 'Details',
+    'submit'                   => 'Submit',
+    'checkout'                 => 'Checkout',
+    'invalid_order'            => 'Invalid order!',
+    'invalid_address'          => 'Invalid address!',
+    'invalid_shipping_address' => 'Invalid shipping address!',
+    'error'                    => 'Error',
+    'success'                  => 'Success',
+    'payment_canceled'         => 'Payment Canceled',
+    'payment_complete'         => 'Congratulations! Your payment is complete!',
+    'transaction_error'        => 'An error occurred during the transaction!',
+    'payment_canceled_text'    => 'You have cancelled the payment!',
+    'confirm_delete'           => 'Are you sure to delete this record?',
+    'yes'                      => 'Yes',
+    'no'                       => 'No',
+    'back'                     => 'Back',
+    'updated'                  => 'Updated succesfully',
+    'status'                   => 'Status',
+    'currency'                 => 'Currency',
+];

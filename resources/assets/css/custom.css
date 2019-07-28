@@ -1,0 +1,65 @@
+/* modals */
+.modal {
+    top:10%;
+}
+.modal-dialog {
+    margin:0 auto;
+}
+.modal-500 {
+    top: 10%;
+}
+.modal-500 .modal-dialog {
+    width:500px !important;
+}
+.modal-600 {
+    top: 8%;
+}
+.modal-600 .modal-dialog {
+    width:600px !important;
+}
+.modal-650 {
+    top: 8%;
+}
+.modal-650 .modal-dialog {
+    width:650px !important;
+}
+.modal-700 {
+    top: 5%;
+}
+.modal-700 .modal-dialog {
+    width:700px !important;
+}
+.modal-750 {
+    top: 5%;
+}
+.modal-750 .modal-dialog {
+    width:750px !important;
+}
+.modal-800, .modal-850 {
+    top: 10px;
+}
+.modal-800 .modal-dialog {
+    width:800px !important;
+}
+.modal-850 .modal-dialog {
+    width:850px !important;
+}
+.modal-900, .modal-950, .modal-1000, .modal-1200 {
+    top: 5px;
+}
+.modal-900 .modal-dialog {
+    width:900px !important;
+}
+.modal-950 .modal-dialog {
+    width:950px !important;
+}
+.modal-1000 .modal-dialog {
+    width:1000px !important;
+}
+.modal-1200 .modal-dialog {
+    width:1200px !important;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+    margin-top: 0px;
+}

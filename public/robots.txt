@@ -1,0 +1,22 @@
+User-agent: *
+Disallow: /admin
+Disallow: /account
+Disallow: /quickpay
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: SemrushBot-SA
+Disallow: /
+
+User-agent: Mozilla/5.0 (compatible; SemrushBot/3~bl; +http://www.semrush.com/bot.html)
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: Mozilla/5.0 (compatible; AhrefsBot/6.1; +http://ahrefs.com/robot/)
+Disallow: /
+
+User-agent: Mozilla/5.0 (compatible; Linux x86_64; Mail.RU_Bot/2.0; +http://go.mail.ru/help/robots)
+Disallow: /

@@ -1,0 +1,25 @@
+<?php
+
+return [
+    'step'                 => 'Step',
+    'shipping_address'     => 'Shipping Address',
+    'use_existing_address' => 'I want to use an existing address',
+    'use_new_address'      => 'I want to use a new address',
+    'continue'             => 'Continue',
+    'delivery_method'      => 'Delivery Method',
+    'free_shipping'        => 'Free Shipping',
+    'express'              => 'Royal Mail',
+    'payment_method'       => 'Payment Method',
+    'select_payment'       => 'Checkout with Paypal by Credit Card or Debit Card. The Safer, Easier Way to Pay.',
+    'order_comment'        => 'Add Comments About Your Order',
+    'confirm_order'        => 'Confirm Order',
+    'goto_step1'           => 'Please select a shipping address in step 1',
+    'pay_order'            => 'Pay Order',
+    'goto_step4'           => 'Please confirm the order in step 4',
+    'done_header'          => '<h2>Your order has been successfully placed and paid!</h2>',
+    'done_order'           => '<p>You can view your order history in the <a href="/account">my account</a> page by clicking on <a href="/account/orders">history</a>.</p>',
+    'done_tracking'        => '<p>You can track your order in the <a href="/tracking">order tracking</a> page by inputting the order number or tracking number.</p>',
+    'done_help'            => '<p>Please direct any questions you have to us.</p><p>Thanks for shopping with us online!</p>',
+    'goto_account'         => '<p>You can view your order history by going to the <a href="/account">my account</a> page and by clicking on <a href="/account/orders">history</a>.</p>',
+    'your_order_is'        => 'Your order is ',
+];

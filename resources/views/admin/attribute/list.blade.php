@@ -1,0 +1,74 @@
+@extends('layouts.app')
+
+@section('htmlheader_title')
+{{ $pageTitle }}
+@endsection
+
+@section('contentheader_title')
+{{ $pageTitle }}
+@endsection
+
+@section('contentheader_here')
+{{ $pageTitle }}
+@endsection
+
+@section('main-content')
+<div class="row">
+	<div class="col-xs-12">
+		<div class="box">
+		<div class="box-header">
+			<div>
+				<form action="{{ url('/admin/attribute/list') }}">
+					<select name="group_id" onchange="this.form.submit()">
+					@foreach ($groups as $group)
+					<option value={{ $group->id }} {{ $group->id == $gid ? 'selected' : '' }}>{{$group->name}}</option>
+					@endforeach
+					</select>
+				</form>
+			</div>
+
+			<div class="box-tools">
+				<div class="input-group input-group-sm">
+					<a href="#" data-remote="{{ url('/admin/attribute/set') }}" data-toggle="modal" data-target="#modal-500">
+						<button type="button" class="btn btn-primary btn-sm">新增属性</button>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- /.box-header -->
+		<div class="box-body table-responsive no-padding">
+			<table class="table table-hover table-bordered table-striped">
+			<tr>
+				<th>ID</th>
+				<th>属性名称</th>
+				<th>分组</th>
+				<th>创建时间</th>
+				<th>操作</th>
+			</tr>
+			@foreach ($data as $row)
+			<tr>
+				<td>{{ $row->id }}</td>
+				<td>{{ $row->name }}</td>
+				<td>{{ $row->attributeGroup->name }}</td>
+				<td>{{ $row->created_at }}</td>
+				<td>
+					<a href="#" data-remote="{{ url('/admin/attribute/set?id=' . $row->id) }}" data-toggle="modal" data-target="#modal-500">
+					<i class="fa fa-pencil"></i> 编辑
+					</a>
+					&nbsp;
+					<ajax-link url="{{ url('admin/attribute/delete/' . $row->id) }}" msg="确认要删除这条记录吗？"><i class="fa fa-trash"></i> 删除</ajax-link>
+				</td>
+			</tr>
+			@endforeach
+			</table>
+
+			<div class="box-footer clearfix pull-right">
+			  {{ $data->appends($params)->links('layouts.pagination.default') }}
+            </div>
+		</div>
+		<!-- /.box-body -->
+		</div>
+		<!-- /.box -->
+	</div>
+</div>
+@endsection

@@ -1,0 +1,27 @@
+<?php
+
+return [
+    'cart'                     => '购物车',
+    'categories'               => '分类',
+    'toggle_nav'               => '切换导航',
+    'admin_panel'              => '管理面板',
+    'details'                  => '细节',
+    'submit'                   => '提交',
+    'checkout'                 => '查看',
+    'invalid_order'            => '订单无效！',
+    'invalid_address'          => '无效地址！',
+    'invalid_shipping_address' => '送货地址无效！',
+    'error'                    => '错误',
+    'success'                  => '成功',
+    'payment_canceled'         => '付款已取消',
+    'payment_complete'         => '恭喜！您的付款已完成！',
+    'transaction_error'        => '交易期间发生错误！',
+    'payment_canceled_text'    => '您已取消付款！',
+    'confirm_delete'           => '您确定要删除此记录吗？',
+    'yes'                      => '是',
+    'no'                       => '否',
+    'back'                     => '返回',
+    'updated'                  => '成功更新',
+    'status'                   => '状态',
+    'currency'                 => '货币',
+];

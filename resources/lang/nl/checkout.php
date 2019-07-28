@@ -1,0 +1,25 @@
+<?php
+
+return [
+    'step'                 => 'Stap',
+    'shipping_address'     => 'Verzendingsadres',
+    'use_existing_address' => 'Ik wil een bestaand adres gebruiken',
+    'use_new_address'      => 'Ik wil een nieuw adres gebruiken',
+    'continue'             => 'Doorgaan met',
+    'delivery_method'      => 'Levering methode',
+    'free_shipping'        => 'Gratis verzending',
+    'express'              => 'DHL',
+    'payment_method'       => 'Betalingsmiddel',
+    'select_payment'       => 'Afrekenen met Paypal per creditcard of bankpas. De veiligere, gemakkelijkere manier om te betalen.',
+    'order_comment'        => 'Voeg opmerkingen toe over uw bestelling',
+    'confirm_order'        => 'Bevestig bestelling',
+    'goto_step1'           => 'Selecteer een verzendadres in stap 1',
+    'pay_order'            => 'Betaal bestelling',
+    'goto_step4'           => 'Bevestig de bestelling in stap 4',
+    'done_header'          => '<h2> Uw bestelling is succesvol geplaatst en betaald! </h2>',
+    'done_order'           => '<p> U kunt uw bestelgeschiedenis bekijken op de pagina <a href="/account">mijn account</a> door op <a href="/account/orders">geschiedenis te</a> klikken. </p>',
+    'done_tracking'        => '<p> U kunt uw bestelling <a href="/tracking">volgen op de</a> pagina voor het <a href="/tracking">traceren van bestellingen</a> door het bestelnummer of trackingnummer in te voeren. </p>',
+    'done_help'            => '<p> Gelieve eventuele vragen die u ons hebt te stellen. </p><p> Bedankt voor het online winkelen bij ons! </p>',
+    'goto_account'         => '<p> U kunt uw bestelgeschiedenis bekijken door naar de pagina <a href="/account">Mijn account te gaan</a> en op de <a href="/account/orders">geschiedenis te</a> klikken. </p>',
+    'your_order_is'        => 'Je bestelling is',
+];

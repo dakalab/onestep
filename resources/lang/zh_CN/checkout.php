@@ -1,0 +1,25 @@
+<?php
+
+return [
+    'step'                 => '步',
+    'shipping_address'     => '收件地址',
+    'use_existing_address' => '我想使用现有的地址',
+    'use_new_address'      => '我想使用一个新地址',
+    'continue'             => '继续',
+    'delivery_method'      => '运输方式',
+    'free_shipping'        => '免费送货',
+    'express'              => '快递',
+    'payment_method'       => '付款方法',
+    'select_payment'       => '通过信用卡或借记卡结账使用Paypal。更加安全且简单的支付方式。',
+    'order_comment'        => '添加关于您的订单的评论',
+    'confirm_order'        => '确认订单',
+    'goto_step1'           => '请在步骤1中选择送货地址',
+    'pay_order'            => '付款订单',
+    'goto_step4'           => '请在步骤4中确认订单',
+    'done_header'          => '<h2>您的订单已成功下单并付款！ </h2>',
+    'done_order'           => '<p>您可以点击<a href="/account">我的帐户</a>里面的<a href="/account/orders">历史记录</a>查看您的订单历史。</p>',
+    'done_tracking'        => '<p>您可以通过输入订单号或跟踪号在<a href="/tracking">订单跟踪</a>页面中跟踪订单。</p>',
+    'done_help'            => '<p>如果您有任何问题，请直接与我们联系。 </p><p>感谢您在线购物！ </p>',
+    'goto_account'         => '<p>您可以转到<a href="/account">我的帐户</a>页面并点击<a href="/account/orders">历史记录</a>来查看订单记录。</p>',
+    'your_order_is'        => '你的订单是',
+];
