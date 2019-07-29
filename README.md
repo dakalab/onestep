@@ -16,6 +16,8 @@ Install node modules by `make yarn c=install`
 
 After you modify js and css files, run `make yarn`
 
+You can run yarn directly if you have it installed on local.
+
 ## Stop and clean up
 
 Stop nginx and mariadb:
