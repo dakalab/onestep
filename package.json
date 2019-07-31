@@ -30,13 +30,14 @@
     "icheck": "^1.0.2",
     "imagemin": "6.0",
     "ionicons": "^4.6.2",
-    "jquery": "^3.2",
+    "jquery": "^3.4",
     "js-yaml": "3.13",
     "laravel-mix": "^3.0",
     "lodash": "^4.17.15",
     "mem": "^5.1",
     "popper.js": "^1.15",
-    "vue": "^2.6.10"
+    "vue": "^2.6.10",
+    "vue-template-compiler": "^2.6.10"
   },
   "dependencies": {
     "echarts": "^4.2.1"

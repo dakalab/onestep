@@ -3,7 +3,7 @@ services:
 
   onestep:
     depends_on:
-      - mariadb
+      - onestep-db
     image: dakalab/onestep
     build:
       context: .
@@ -23,10 +23,10 @@ services:
     networks:
       - backend
 
-  mariadb:
+  onestep-db:
     image: mariadb:10.4
     restart: unless-stopped
-    container_name: mariadb
+    container_name: onestep-db
     ports:
       - "3306"
     environment:

@@ -5,7 +5,7 @@ SHELL := /bin/bash
 
 NETWORK=backend
 MARIADB_IMG=mariadb:10.4
-MARIADB_NAME=mariadb
+MARIADB_NAME=onestep-db
 MARIADB_PASSWORD=hello123
 
 help:
@@ -13,8 +13,8 @@ help:
 	#
 	# conndb            - connect to MariaDB using root
 	# logs              - tail the container logs
-	# mariadb           - boot up mariadb container
-	# mariadb-down      - remove mariadb container
+	# db                - boot up db container
+	# db-down           - remove db container
 	# network           - create docker bridge network
 	# onestep           - boot up onestep container
 	# onestep-down      - remove onestep container
@@ -107,14 +107,14 @@ onestep-down:
 	docker-compose stop onestep
 	docker-compose rm -f onestep
 
-.PHONY: mariadb
-mariadb: network
-	docker-compose up -d mariadb
+.PHONY: db
+db: network
+	docker-compose up -d onestep-db
 
-.PHONY: mariadb-down
-mariadb-down:
-	docker-compose stop mariadb
-	docker-compose rm -f mariadb
+.PHONY: db-down
+db-down:
+	docker-compose stop onestep-db
+	docker-compose rm -f onestep-db
 
 .PHONY: yarn
 yarn:
