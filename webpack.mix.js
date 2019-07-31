@@ -1,4 +1,4 @@
-const { mix } = require('laravel-mix');
+const mix = require('laravel-mix');
 
 /*
  |--------------------------------------------------------------------------
@@ -43,4 +43,3 @@ if (mix.config.inProduction) {
   mix.version();
   mix.minify();
 }
-
