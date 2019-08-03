@@ -46,7 +46,6 @@
 
         @if (!$product->hidden)
         <form class="form-inline push" action="{{ route('cart.update') }}">
-        <input id="input-checkout" type="hidden" name="checkout" value="0">
         <input type="hidden" name="product_id" value="{{ $product->id }}">
             <div class="form-group">
                 <label for="input-quantity"><b>@lang('product.qty')</b></label>
@@ -55,10 +54,6 @@
             <button type="submit" class="btn btn-primary">
                 <span class="glyphicon glyphicon-shopping-cart"></span>
                 @lang('product.add_to_cart')
-            </button>
-            <button type="button" class="btn btn-warning" onclick="$('#input-checkout').val(1);this.form.submit()">
-                <i class="fa fa-paypal"></i>
-                @lang('product.paypal_checkout')
             </button>
         </form>
         @endif

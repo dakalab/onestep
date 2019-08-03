@@ -7,7 +7,7 @@
         @csrf
         <p>@lang('checkout.select_payment')</p>
         <div class="radio">
-            <label><input type="radio" name="payment_method" value="paypal" checked="checked">Paypal</label>
+            <label><input type="radio" name="payment_method" value="cod" checked="checked">货到付款</label>
         </div>
         <div class="buttons clearfix">
             <div class="pull-right">

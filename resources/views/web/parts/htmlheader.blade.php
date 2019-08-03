@@ -41,8 +41,6 @@
     }
     </style>
 
-    <script src="https://www.paypalobjects.com/api/checkout.js"></script>
-
     <script>
         window.trans = @php
             $lang_files = File::files(resource_path() . '/lang/' . App::getLocale());
@@ -55,20 +53,6 @@
             echo json_encode($trans);
         @endphp
     </script>
-
-    @if (config('app.tracking_code'))
-    <script>
-        var _hmt = _hmt || [];
-        (function() {
-        var hm = document.createElement("script");
-        hm.src = @php
-            echo "\"https://hm.baidu.com/hm.js?" . config('app.tracking_code') . "\";\n";
-        @endphp
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
-    @endif
 
     @if (config('google.aw'))
     <!-- Google Analytics and AdWords -->

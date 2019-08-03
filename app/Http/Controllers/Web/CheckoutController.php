@@ -64,7 +64,7 @@ class CheckoutController extends Controller
             }
             if (in_array($order->status, ['expired', 'canceled'])) {
                 return redirect(route('checkout.fail'));
-            } elseif ($order->status != 'pending') {
+            } else {
                 return redirect(route('checkout.done'));
             }
             session(['step' => 5, 'order_id' => $order->id]); // the order has been created
@@ -106,15 +106,15 @@ class CheckoutController extends Controller
         return $this->success('');
     }
 
-    public function step2()
+    public function step2(Request $request)
     {
-        session(['step' => 3]);
+        session(['step' => 3, 'shipping_method' => $request->shipping_method]);
         return $this->success('');
     }
 
-    public function step3()
+    public function step3(Request $request)
     {
-        session(['step' => 4]);
+        session(['step' => 4, 'payment_method' => $request->payment_method]);
         return $this->success('');
     }
 
@@ -129,7 +129,11 @@ class CheckoutController extends Controller
                 $order->user_agent = $request->userAgent();
                 $order->user_id = Auth::user()->id;
                 $order->email = Auth::user()->email;
-                $order->setData($request->all());
+
+                $data = $request->all();
+                $data['shipping_method'] = session('shipping_method');
+                $data['payment_method'] = session('payment_method');
+                $order->setData($data);
 
                 $addressID = session('address_id');
                 if (!$addressID) {
