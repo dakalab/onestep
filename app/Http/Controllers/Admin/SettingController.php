@@ -11,7 +11,7 @@ class SettingController extends Controller
 {
     public function index(Request $request)
     {
-        $title = "网站设置";
+        $title = '网站设置';
 
         if ($request->isMethod('post')) {
             $data = $request->all();
@@ -32,16 +32,16 @@ class SettingController extends Controller
 
     public function paypal(Request $request)
     {
-        $title = "Paypal设置";
+        $title = 'Paypal设置';
 
-        $sandbox    = PaypalSetting::find('sandbox');
+        $sandbox = PaypalSetting::find('sandbox');
         $production = PaypalSetting::find('production');
 
         if ($request->isMethod('post')) {
-            $setting            = PaypalSetting::find($request->env);
-            $setting->account   = $request->account;
+            $setting = PaypalSetting::firstOrNew(['env' => $request->env]);
+            $setting->account = $request->account;
             $setting->client_id = $request->client_id;
-            $setting->secret    = $request->secret;
+            $setting->secret = $request->secret;
             $setting->save();
 
             return $this->success('设置成功');
@@ -56,16 +56,16 @@ class SettingController extends Controller
 
     public function tracking(Request $request)
     {
-        $title = "快递设置";
+        $title = '快递设置';
 
-        $setting = TrackingSetting::first();
+        $setting = TrackingSetting::firstOrNew([]);
 
         if ($request->isMethod('post')) {
-            $setting->name     = $request->name;
-            $setting->address  = $request->address;
-            $setting->company  = $request->company;
-            $setting->phone    = $request->phone;
-            $setting->fax      = $request->fax;
+            $setting->name = $request->name;
+            $setting->address = $request->address;
+            $setting->company = $request->company;
+            $setting->phone = $request->phone;
+            $setting->fax = $request->fax;
             $setting->postcode = $request->postcode;
             $setting->save();
 
@@ -80,12 +80,12 @@ class SettingController extends Controller
 
     public function terms(Request $request)
     {
-        $title = "Terms and Conditions";
+        $title = 'Terms and Conditions';
 
         $terms = WebsiteSetting::where('key', 'terms')->first();
         if (!$terms) {
-            $terms        = new WebsiteSetting;
-            $terms->key   = 'terms';
+            $terms = new WebsiteSetting;
+            $terms->key = 'terms';
             $terms->value = '';
         }
 

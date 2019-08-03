@@ -7,7 +7,7 @@
                 Account
                 </label>
                 <div class="col-md-10">
-                <input type="text" class="form-control input-large" name="account" value="{{ $setting->account }}">
+                <input type="text" class="form-control input-large" name="account" value="{{ object_get($setting, 'account') }}">
                 </div>
             </div>
             <div class="form-group">
@@ -15,7 +15,7 @@
                 Client ID
                 </label>
                 <div class="col-md-10">
-                <input type="text" class="form-control input-large" name="client_id" value="{{ $setting->client_id }}">
+                <input type="text" class="form-control input-large" name="client_id" value="{{ object_get($setting, 'client_id') }}">
                 </div>
             </div>
             <div class="form-group">
@@ -23,7 +23,7 @@
                 Secret
                 </label>
                 <div class="col-md-10">
-                <input type="text" class="form-control input-large" name="secret" value="{{ $setting->secret }}">
+                <input type="text" class="form-control input-large" name="secret" value="{{ object_get($setting, 'secret') }}">
                 </div>
             </div>
         </div>

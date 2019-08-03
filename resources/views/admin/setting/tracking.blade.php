@@ -23,7 +23,7 @@
                 Name
                 </label>
                 <div class="col-md-10">
-                <input type="text" class="form-control input-large" name="name" value="{{ $setting->name }}">
+                <input type="text" class="form-control input-large" name="name" value="{{ object_get($setting, 'name') }}">
                 </div>
             </div>
             <div class="form-group">
@@ -31,7 +31,7 @@
                 Address
                 </label>
                 <div class="col-md-10">
-                <input type="text" class="form-control input-large" name="address" value="{{ $setting->address }}">
+                <input type="text" class="form-control input-large" name="address" value="{{ object_get($setting, 'address') }}">
                 </div>
             </div>
             <div class="form-group">
@@ -39,7 +39,7 @@
                 Company
                 </label>
                 <div class="col-md-10">
-                <input type="text" class="form-control input-large" name="company" value="{{ $setting->company }}">
+                <input type="text" class="form-control input-large" name="company" value="{{ object_get($setting, 'company') }}">
                 </div>
             </div>
             <div class="form-group">
@@ -47,7 +47,7 @@
                 Phone
                 </label>
                 <div class="col-md-10">
-                <input type="text" class="form-control input-large" name="phone" value="{{ $setting->phone }}">
+                <input type="text" class="form-control input-large" name="phone" value="{{ object_get($setting, 'phone') }}">
                 </div>
             </div>
             <div class="form-group">
@@ -55,7 +55,7 @@
                 Fax
                 </label>
                 <div class="col-md-10">
-                <input type="text" class="form-control input-large" name="fax" value="{{ $setting->fax }}">
+                <input type="text" class="form-control input-large" name="fax" value="{{ object_get($setting, 'fax') }}">
                 </div>
             </div>
             <div class="form-group">
@@ -63,7 +63,7 @@
                 Postcode
                 </label>
                 <div class="col-md-10">
-                <input type="text" class="form-control input-large" name="postcode" value="{{ $setting->postcode }}">
+                <input type="text" class="form-control input-large" name="postcode" value="{{ object_get($setting, 'postcode') }}">
                 </div>
             </div>
         </div>
