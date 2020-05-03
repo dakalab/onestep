@@ -20,7 +20,7 @@
     "icheck": "^1.0.2",
     "imagemin": "6.0",
     "ionicons": "^4.6.2",
-    "jquery": "^3.4",
+    "jquery": "^3.5",
     "laravel-mix": "^3.0",
     "lodash": "^4.17.15",
     "mem": "^5.1",
