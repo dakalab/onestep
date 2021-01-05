@@ -12,7 +12,7 @@
   "devDependencies": {
     "acacha-forms": "^1.0.10",
     "admin-lte": "^2.4.15",
-    "axios": "^0.19",
+    "axios": "^0.21",
     "bootbox": "5.2.0",
     "bootstrap": "^3.4",
     "cross-env": "^5.2",
